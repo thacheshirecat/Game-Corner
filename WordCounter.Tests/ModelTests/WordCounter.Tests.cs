@@ -30,6 +30,18 @@ namespace WordCounterTests
       //Assert
       Assert.AreNotEqual(expected, result);
     }
+    [TestMethod]
+    public void SetSingleWord_AbleToChangeSingleWord_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("cat");
+      string expected = "hello";
+      //Act
+      newCount.SetSingleWord("hello");
+      string result = newCount.GetSingleWord();
+      //Assert
+      Assert.AreEqual(expected, result);
+    }
   }
 
 }
