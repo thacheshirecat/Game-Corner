@@ -122,6 +122,18 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual(true, evaluate);
     }
+    [TestMethod]
+    public void CreateStringArray_ConvertsToLower_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("hello", "The Cat Hello Bird");
+      string[] expected = {"the", "cat", "hello", "bird"};
+      //Act
+      string[] result = newCount.CreateStringArray();
+      bool evaluate = result.SequenceEqual(expected);
+      //Assert
+      Assert.AreEqual(true, evaluate);
+    }
   }
 
 }
