@@ -9,9 +9,10 @@ namespace WordCounterModel
     private string _multipleWords;
     public string[] wordArray;
     //Constructor
-    public RepeatCounter(string firstWord)
+    public RepeatCounter(string firstWord, string manyWords)
     {
       _singleWord = firstWord;
+      _multipleWords = manyWords;
     }
     //Methods
     //Getter & Setter for _singleWord
@@ -32,6 +33,6 @@ namespace WordCounterModel
     {
       _multipleWords = newWords;
     }
-    
+
   }
 }
