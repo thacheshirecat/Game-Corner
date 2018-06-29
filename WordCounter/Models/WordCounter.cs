@@ -60,6 +60,39 @@ namespace WordCounterModel
       }
       return result;
     }
+  }
 
+  class Program
+  {
+    public static void Main()
+    {
+      RepeatCounter newCount = new RepeatCounter("default", "default");
+
+      Console.WriteLine("*Word Counter Program Main*");
+      Console.WriteLine("Please enter text you would like to scan:");
+      newCount.SetMultipleWords(Console.ReadLine());
+      Console.WriteLine("Now, enter the word you would like to scan for:");
+      newCount.SetSingleWord(Console.ReadLine());
+
+      int wordCount = newCount.WordRepeatCounter();
+      string userSingle = newCount.GetSingleWord();
+      string userMulti = newCount.GetMultpleWords();
+
+      if(wordCount == 1)
+      {
+        Console.WriteLine(userSingle + " appears " + wordCount + " time in the text: " + userMulti);
+      }
+      else
+      {
+        Console.WriteLine(userSingle + " appears " + wordCount + " times in the text: " + userMulti);
+      }
+
+      Console.WriteLine("Enter [Y] to return to Main, or enter to quit.");
+      string userContinue = Console.ReadLine();
+      if(userContinue == "y" || userContinue == "Y")
+      {
+        Main();
+      }
+    }
   }
 }

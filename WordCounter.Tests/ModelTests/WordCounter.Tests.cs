@@ -1,9 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounterModel;
 using System.Linq;
-//Assign
-//Act
-//Assert
+
 namespace WordCounterTests
 {
   [TestClass]
@@ -148,7 +146,6 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual(true, evaluate);
     }
-
     //
     //Counter tests
     //
