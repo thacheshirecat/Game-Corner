@@ -42,6 +42,18 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual(expected, result);
     }
+    [TestMethod]
+    public void SetSingleWord_DoesNotIgnoreCase_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("cat");
+      string expected = "hello";
+      //Act
+      newCount.SetSingleWord("Hello");
+      string result = newCount.GetSingleWord();
+      //Assert
+      Assert.AreNotEqual(expected, result);
+    }
   }
 
 }
