@@ -138,10 +138,10 @@ namespace WordCounterTests
     public void CreateStringArray_SplitsAtAllDesignatedCharacters_True()
     {
       //Assign
-      RepeatCounter newCount = new RepeatCounter("hello", "q,w.e:r!t?y\"u'i;o-p_a/s\\d@f#g$h%j^k&l*z(x)c[v]b{n}m+q=w<e>r0t1y2u3i4o5p6a7s8d9f");
+      RepeatCounter newCount = new RepeatCounter("hello", "q,w.e:r!t?y\"u'i;o-p_a/s\\d@f#g$h%j^k&l*z(x)c[v]b{n}m+q=w<e>r0t1y2u3i4o5p6a7s8d9f`g~h");
       string[] expected = { "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a",
       "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", "q", "w", "e",
-      "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f" };
+      "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h" };
       //Act
       string[] result = newCount.CreateStringArray();
       bool evaluate = result.SequenceEqual(expected);
@@ -191,6 +191,17 @@ namespace WordCounterTests
       //Assign
       RepeatCounter newCount = new RepeatCounter("hello", "the cat HElLo bird");
       int expected = 1;
+      //Act
+      int result = newCount.WordRepeatCounter();
+      //Assert
+      Assert.AreEqual(expected, result);
+    }
+    [TestMethod]
+    public void WordRepeatCounter_CanIdentifyWordInStringWithMultipleWordsRegardLessOfCaseAndSpecialCharacters_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("hello", "HELLO! $HeLlO? <Hello> ~HellO123");
+      int expected = 4;
       //Act
       int result = newCount.WordRepeatCounter();
       //Assert
