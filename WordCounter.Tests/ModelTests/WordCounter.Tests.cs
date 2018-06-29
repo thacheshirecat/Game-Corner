@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounterModel;
+using System.Linq;
 //Assign
 //Act
 //Assert
@@ -8,7 +9,9 @@ namespace WordCounterTests
   [TestClass]
   public class RepeatCounterTests
   {
+    //
     //Single word getter and setter test methods
+    //
     [TestMethod]
     public void GetSingleWord_ReturnsStoredWord_True()
     {
@@ -55,7 +58,9 @@ namespace WordCounterTests
       //Assert
       Assert.AreNotEqual(expected, result);
     }
+    //
     //Multiple word getter and setter test methods
+    //
     [TestMethod]
     public void GetMultpleWords_ReturnsStoredWords_True()
     {
@@ -101,6 +106,21 @@ namespace WordCounterTests
       string result = newCount.GetMultpleWords();
       //Assert
       Assert.AreNotEqual(expected, result);
+    }
+    //
+    //String Array Tests
+    //
+    [TestMethod]
+    public void CreateStringArray_CreatesAStringArray_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("hello", "the cat hello bird");
+      string[] expected = {"the", "cat", "hello", "bird"};
+      //Act
+      string[] result = newCount.CreateStringArray();
+      bool evaluate = result.SequenceEqual(expected);
+      //Assert
+      Assert.AreEqual(true, evaluate);
     }
   }
 

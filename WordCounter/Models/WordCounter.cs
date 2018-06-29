@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace WordCounterModel
 {
@@ -32,6 +33,13 @@ namespace WordCounterModel
     public void SetMultipleWords(string newWords)
     {
       _multipleWords = newWords;
+    }
+    //Method to break up the multi-word string into an array of strings
+    public string[] CreateStringArray()
+    {
+      string manyWords = this.GetMultpleWords().ToLower();
+      wordArray = manyWords.Split(' ');
+      return wordArray;
     }
 
   }
