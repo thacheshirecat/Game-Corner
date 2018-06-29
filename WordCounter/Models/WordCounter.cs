@@ -37,8 +37,11 @@ namespace WordCounterModel
     //Method to break up the multi-word string into an array of strings
     public string[] CreateStringArray()
     {
+      char[] splitCharacters = { ' ', ',', '.', ':', '!', '?', '"', '\'', ';', '-', '_', '/',
+      '\\', '@', '#', '$', '%', '^', '&', '*', '(', ')', '[', ']', '{', '}', '+', '=', '<', '>',
+      '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
       string manyWords = this.GetMultpleWords().ToLower();
-      wordArray = manyWords.Split(' ');
+      wordArray = manyWords.Split(splitCharacters);
       return wordArray;
     }
     //Method that counts and outputs how many times the first word appears in the string of words
@@ -56,7 +59,6 @@ namespace WordCounterModel
         }
       }
       return result;
-
     }
 
   }
