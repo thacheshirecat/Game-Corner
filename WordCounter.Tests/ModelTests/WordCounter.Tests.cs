@@ -148,6 +148,17 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual(expected, result);
     }
+    [TestMethod]
+    public void WordRepeatCounter_CanIdentifySameWordRegardlessOfCase_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("hello", "Hello");
+      int expected = 1;
+      //Act
+      int result = newCount.WordRepeatCounter();
+      //Assert
+      Assert.AreEqual(expected, result);
+    }
   }
 
 }
