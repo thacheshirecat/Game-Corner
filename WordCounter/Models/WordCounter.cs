@@ -41,6 +41,23 @@ namespace WordCounterModel
       wordArray = manyWords.Split(' ');
       return wordArray;
     }
+    //Method that counts and outputs how many times the first word appears in the string of words
+    public int WordRepeatCounter()
+    {
+      string singleWord = this.GetSingleWord().ToLower();
+      string[] checkArray = this.CreateStringArray();
+      int result = 0;
+
+      foreach(string word in checkArray)
+      {
+        if(word == singleWord)
+        {
+          result += 1;
+        }
+      }
+      return result;
+
+    }
 
   }
 }

@@ -134,6 +134,20 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual(true, evaluate);
     }
+    //
+    //Counter tests
+    //
+    [TestMethod]
+    public void WordRepeatCounter_CanIdentifySameWord_True()
+    {
+      //Assign
+      RepeatCounter newCount = new RepeatCounter("hello", "hello");
+      int expected = 1;
+      //Act
+      int result = newCount.WordRepeatCounter();
+      //Assert
+      Assert.AreEqual(expected, result);
+    }
   }
 
 }
