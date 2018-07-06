@@ -1,0 +1,14 @@
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.Tests.deps.json
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.Tests.runtimeconfig.json
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.Tests.runtimeconfig.dev.json
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.Tests.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.Tests.pdb
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\bin\Debug\netcoreapp1.1\GameCorner.pdb
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\obj\Debug\netcoreapp1.1\GameCorner.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\obj\Debug\netcoreapp1.1\GameCorner.Tests.AssemblyInfo.cs
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\obj\Debug\netcoreapp1.1\GameCorner.Tests.dll
+C:\Users\Cheshire Cat\Desktop\Coding\Reviews\GameCorner.Solution\GameCorner.Tests\obj\Debug\netcoreapp1.1\GameCorner.Tests.pdb
