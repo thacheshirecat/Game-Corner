@@ -7,7 +7,7 @@ Game Corner
 Setup Instructions:
 
     1. Clone the repository from https://github.com/thacheshirecat/Game-Corner
-    2. navigate to the GameCornerMVC.Solution/GameCorner folder in the terminal
+    2. navigate to the GameCorner.Solution/GameCorner folder in the terminal
     3. Execute dotnet run and navigate to LocalHost:5000 in your browser
 
 Description:
