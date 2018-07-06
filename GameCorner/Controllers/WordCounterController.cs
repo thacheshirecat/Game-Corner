@@ -10,6 +10,7 @@ namespace GameCorner.Controllers
     [HttpGet("/WordCounter")]
     public ActionResult Index()
     {
+      RepeatCounter.ClearAll();
       return View();
     }
 
@@ -29,8 +30,7 @@ namespace GameCorner.Controllers
     [HttpPost("/WordCounter/Results")]
     public ActionResult Results()
     {
-      List<RepeatCounter> allCounts = RepeatCounter.GetAll();
-      return View(allCounts);
+      return View(RepeatCounter.GetAll());
     }
   }
 }

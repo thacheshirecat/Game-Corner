@@ -4,6 +4,20 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/">Hopkin's Game Corner</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/WordCounter">Word Counter</a></li>
+              <li class="active"><a href="/ScrabbleScore">Scrabble Score</a></li>
+          </ul>
+      </div>
+  </nav>
+
   <div class="container">
     <h1>Welcome to Scrabble Score!</h1>
     <h3>Please read the instructions, and then click the button to begin</h3>
@@ -14,9 +28,9 @@
       <p>This program will let you know what the unmodified score is for a word played in Scrabble.</p>
       <p>Note that some tiles on the game board include modifiers for when words/letters are places on them, however this program only shows the unmodified score.</p>
     </div>
-    <h5>Shall we Begin?</p>
+    <h5>Let's score some words!</p>
     <form action="/ScrabbleScore/CreateForm">
-      <button type="submit" class="btn btn-success">Begin!</button>
+      <button type="submit" class="btn btn-success">Start!</button>
     </form>
     </div>
   </div>

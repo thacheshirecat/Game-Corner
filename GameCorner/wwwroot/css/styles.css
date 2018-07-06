@@ -17,3 +17,7 @@ img
 {
     height: 75px;
 }
+
+.nav.navbar-nav li a {
+    color: #edd0fb;
+}
