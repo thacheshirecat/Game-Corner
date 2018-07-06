@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using GameCorner.Models;
 
 namespace GameCorner.Controllers
 {
@@ -7,6 +8,7 @@ namespace GameCorner.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
+      RepeatCounter.ClearAll();
       return View();
     }
   }

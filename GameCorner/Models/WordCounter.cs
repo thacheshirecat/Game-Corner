@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace GameCorner.Models
 {
@@ -9,11 +10,13 @@ namespace GameCorner.Models
     private string _singleWord;
     private string _multipleWords;
     public string[] wordArray;
+    private static List<RepeatCounter> _instances = new List<RepeatCounter> {};
     //Constructor
     public RepeatCounter(string firstWord, string manyWords)
     {
       _singleWord = firstWord;
       _multipleWords = manyWords;
+      _instances.Add(this);
     }
     //Methods
     //Getter & Setter for _singleWord
@@ -33,6 +36,15 @@ namespace GameCorner.Models
     public void SetMultipleWords(string newWords)
     {
       _multipleWords = newWords;
+    }
+    //Get all and clear all methods for the List
+    public static List<RepeatCounter> GetAll()
+    {
+      return _instances;
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
     //Method to break up the multi-word string into an array of strings
     public string[] CreateStringArray()

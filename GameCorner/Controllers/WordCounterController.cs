@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 using GameCorner.Models;
 
 namespace GameCorner.Controllers
@@ -22,6 +24,13 @@ namespace GameCorner.Controllers
     {
       RepeatCounter newCount = new RepeatCounter(singleword, manywords);
       return View(newCount);
+    }
+
+    [HttpPost("/WordCounter/Results")]
+    public ActionResult Results()
+    {
+      List<RepeatCounter> allCounts = RepeatCounter.GetAll();
+      return View(allCounts);
     }
   }
 }

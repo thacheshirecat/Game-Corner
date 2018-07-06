@@ -5,21 +5,22 @@
 </head>
 <body>
   <div class="container">
-    <h1>Success!<h1>
-    <h5>In the sentance: @Model.GetMultpleWords().</h5>
-    <h5>The word: @Model.GetSingleWord().</h5>
-    <h5>Was repeated @Model.WordRepeatCounter() time(s).
-
+    <h1>Here are your search results so far:</h1>
+    @foreach(var words in Model)
+    {
+      <h4>In the sentance: @words.GetMultpleWords(),</h4>
+      <h4>The word: @words.GetSingleWord(),</h4>
+      <h4>Was repeated @words.WordRepeatCounter() time(s).</h4>
+      <h4>_______________</h4>
+    }
+    <h5>
     <form action="/WordCounter/CreateForm">
       <button type="submit" class="btn btn-success">Play Again</button>
-    </form>
-
-    <form action="/WordCounter/Results" method="post">
-      <button type="submit" class="btn btn-success">View Searches</button>
     </form>
 
     <form action="/">
       <button type="submit" class="btn btn-success">Home</button>
     </form>
+  </h5>
   </div>
 </body>
