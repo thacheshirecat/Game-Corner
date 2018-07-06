@@ -21,7 +21,7 @@ namespace GameCorner.Controllers
     public ActionResult Result(string theword)
     {
       Word newScore = new Word(theword);
-      return View(theword);
+      return View(newScore);
     }
   }
 }

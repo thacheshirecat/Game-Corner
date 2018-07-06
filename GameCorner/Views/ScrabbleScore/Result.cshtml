@@ -1,0 +1,20 @@
+<head>
+    <title>Scrabble Score</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Success!<h1>
+    <h5>The Word: @Model.GetWord().</h5>
+    <h5>Is worth @Model.GetFinalScore() point(s) in Scrabble.
+
+    <form action="/ScrabbleScore/CreateForm">
+      <button type="submit" class="btn btn-success">Play Again</button>
+    </form>
+
+    <form action="/">
+      <button type="submit" class="btn btn-success">Home</button>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,17 @@
+<head>
+    <title>Scrabble Score</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Remember, this will only show the base, unmodified score!</h1>
+    <div class="well">
+      <form action="/ScrabbleScore/Result" method="post">
+        <label for="theword">Enter a word to score.</label>
+        <input id="theword" name="theword" type="text" class="form-control" required>
+        <h5><button type="submit" class="btn btn-success">Play!</button></h5>
+      </form>
+    </div>
+  </div>
+</body>

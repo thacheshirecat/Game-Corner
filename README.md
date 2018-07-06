@@ -2,16 +2,16 @@ Author Name:
 Alex Bunnell
 
 Program Name:
-Word Counter
+Game Corner
 
 Setup Instructions:
 
-    1. Clone the repository from https://github.com/thacheshirecat/WordCounterMVC
-    2. navigate to the WordCounterMVC.Solution/WordCounter folder in the terminal
-    3. Run dotnet run and navigate to LocalHost:5000 in your browser
+    1. Clone the repository from https://github.com/thacheshirecat/Game-Corner
+    2. navigate to the GameCornerMVC.Solution/GameCorner folder in the terminal
+    3. Execute dotnet run and navigate to LocalHost:5000 in your browser
 
 Description:
-This program was designed using C# and tested with MSTest. The program allows the user to enter one word, followed by a string of words and the program will evaluate how many times the first word is used in the second string.
+This program was designed using C# using MVC and tested with MSTest. The program contains some 'games' for the user to 'play'
 
 Copyright and License Information:
 This code utilizes an MIT license
@@ -32,3 +32,4 @@ Specs:
 7. Program is able to find each instance of the single word in a string of multiple words //
   Input: "hello"/"the cat hello bird" - Output: "hello shows up 1 time(s) in the string: the cat hello bird"
 8. The program is an MVC app with an interface that can be viewed through the browser.
+9. Additional games available following above model.
