@@ -5,5 +5,15 @@
 </head>
 <body>
   <div class="container">
+    <h1>Remember, choose wisely!</h1>
+    <div class="well">
+      <form action="/WordCounter/Result" method="post">
+        <label for="manywords">Enter a sentance to scan.</label>
+        <input id="manywords" name="manywords" type="text" class="form-control">
+        <label for="singleword">Enter word to scan for.</label>
+        <input id="singleword" name="singleword" type="text" class="form-control">
+        <button type="submit" class="btn btn-success">Play!</button>
+      </form>
+    </div>
   </div>
 </body>
