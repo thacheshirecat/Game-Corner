@@ -1,3 +1,14 @@
-input {
-  margin-bottom: 50px;
+body
+{
+  background-image: url("../img/bg.png");
+}
+
+button
+{
+  margin-top: 25px;
+}
+
+h1, h3, ul, h5
+{
+  text-align: center;
 }
