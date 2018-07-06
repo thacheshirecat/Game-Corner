@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace WordCounterModel
+namespace WordCounter.Models
 {
   public class RepeatCounter
   {

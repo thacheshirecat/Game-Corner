@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounterModel;
 using System.Linq;
 
-namespace WordCounterTests
+namespace WordCounter.Tests
 {
   [TestClass]
   public class RepeatCounterTests
